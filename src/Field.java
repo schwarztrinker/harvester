@@ -11,4 +11,9 @@ public class Field {
             System.out.println("created " + (x*size) + " Plants");
         }
     }
+
+    public void setWheatGrain(int grainHeight, Position position){
+        acker[position.x][position.y].setNumberOfGrains(grainHeight);
+    }
+
 }
