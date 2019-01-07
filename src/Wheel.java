@@ -1,8 +1,8 @@
 public class Wheel {
-    final int size;
+    final double size;
     final boolean isFrontWheel;
 
-    public Wheel(int size, boolean isFrontWheel){
+    public Wheel(double size, boolean isFrontWheel){
         this.size = size;
         this.isFrontWheel = isFrontWheel;
     }
