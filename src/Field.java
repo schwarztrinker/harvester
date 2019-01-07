@@ -7,8 +7,9 @@ public class Field {
         for(int x = 0; x < size; x++){
             for(int y = 0; y < size; y++){
                 acker[x][y] = new Wheat();
+
             }
-            System.out.println("created " + (x*size) + " Plants");
+            System.out.println("created plant " + (x*size) + "plants");
         }
     }
 

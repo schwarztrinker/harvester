@@ -7,8 +7,9 @@ public class Main {
         //New Harvester
         Harvester harvester = new Harvester(650,  9, 10, false, 6500);
 
-        wheatField = new Field(10000);
+        //wheatField = new Field(10000);
 
         System.out.println("finished");
+
     }
 }
