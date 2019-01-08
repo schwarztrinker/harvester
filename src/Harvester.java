@@ -6,6 +6,7 @@ public class Harvester {
     Wheel wheel[];
 
     BoardComputer boardComputer;
+    final int fieldSize = 1000;
 
     public Harvester(int horsePower, int cuttingUnitWidth, int pipeLenght, boolean pipeOpen, int maxStorage){
         engine = new Engine( horsePower);
@@ -19,7 +20,7 @@ public class Harvester {
         }
 
 
-        boardComputer = new BoardComputer(new Drone().scan);
+        boardComputer = new BoardComputer(new Drone(fieldSize).scan().getAcker(), fieldSize);
 
 
     }

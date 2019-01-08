@@ -9,7 +9,7 @@ public class Field {
                 acker[x][y] = new Wheat();
 
             }
-            System.out.println("created plant " + (x*size) + "plants");
+            System.out.println("created " + ((1+x)*size) + "plants");
         }
     }
 
@@ -17,4 +17,7 @@ public class Field {
         acker[position.x][position.y].setNumberOfGrains(grainHeight);
     }
 
+    public Wheat[][] getAcker() {
+        return acker;
+    }
 }

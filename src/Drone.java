@@ -1,19 +1,22 @@
 public class Drone {
 
     private Field outputField;
+    private final int fieldSize;
 
-    public Drone(){
-        outputField = new Field(10000);
+    public Drone(int fieldSize){
+        this.fieldSize = fieldSize;
+        outputField = new Field(fieldSize);
     }
 
-    public Field scan(Field fieldToBeScanned){
+    public Field scan(){
 
-        for(int i =0; i < 10000; i++){
-            for(int j =0; j< 10000; j++){
+        for(int i = 0; i < fieldSize; i++){
+            for(int j = 0; j < fieldSize; j++){
             int rnd = (int) Math.round(100 + Math.random() * 400);
-            fieldToBeScanned.setWheatGrain(rnd, new Position(i, j));
+                outputField.setWheatGrain(rnd, new Position(i, j));
             }
         }
+
         return outputField;
 
     }

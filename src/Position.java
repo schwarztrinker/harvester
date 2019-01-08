@@ -1,4 +1,4 @@
-public class Position {
+public class Position{
     final int x;
     final int y;
 
