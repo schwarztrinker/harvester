@@ -1,7 +1,5 @@
-public class Engine {
-    final int horsePower;
+public abstract class Engine implements IEngine {
 
-    public Engine(int horsePower){
-        this.horsePower = horsePower;
-    }
+    private int horsepower;
+    private boolean running = false;
 }

@@ -1,5 +1,5 @@
 public class Harvester {
-    Engine engine;
+    FuelEngine engine;
     CuttingUnit cuttingUnit;
     Pipe pipe;
     Storage storage;
@@ -9,7 +9,7 @@ public class Harvester {
     final int fieldSize = 1000;
 
     public Harvester(int horsePower, int cuttingUnitWidth, int pipeLenght, boolean pipeOpen, int maxStorage){
-        engine = new Engine( horsePower);
+        engine = new FuelEngine(horsePower, horsePower / 20);
         cuttingUnit = new CuttingUnit(cuttingUnitWidth);
         pipe = new Pipe(pipeLenght, pipeOpen);
         storage = new Storage(maxStorage);

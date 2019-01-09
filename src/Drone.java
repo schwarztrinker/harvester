@@ -2,10 +2,12 @@ public class Drone {
 
     private Field outputField;
     private final int fieldSize;
+    private ElectronicEngine engine;
 
     public Drone(int fieldSize){
         this.fieldSize = fieldSize;
         outputField = new Field(fieldSize);
+        engine = new ElectronicEngine(5);
     }
 
     public Field scan(){
